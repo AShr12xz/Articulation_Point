@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AP Visualizer — Polished (A)</title>
+<link rel="stylesheet" href="/style.css">
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+<header>
+<h1>Articulation Point Visualizer</h1>
+<p>Use the controls to create and edit the graph. Click <strong>Run</strong> to compute articulation points. Use <strong>Step</strong> to animate DFS.</p>
+</header>
+
+
+<div class="controls">
+<button id="addNode">Add Node</button>
+<button id="edgeMode">Add Edge (select 2 nodes)</button>
+<button id="removeNode">Remove Node</button>
+<button id="run">Run</button>
+<button id="step">Step (DFS animation)</button>
+<button id="clear">Clear</button>
+</div>
+
+
+<div id="network" class="network"></div>
+<div id="result"
+     style="
+        margin-top: 14px;
+        padding: 12px 18px;
+        font-size: 18px;
+        font-weight: 600;
+        background: #f8fbff;
+        border: 2px solid #d2e6ff;
+        color: #114c99;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        letter-spacing: 0.3px;
+     ">
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
